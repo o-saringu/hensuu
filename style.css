@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+body{
+	background-color:#CCFFFF;
+	margin:5px;
+}
+
+.midasi{
+	background-color:#0FF;
+	width: 1280px;
+	height:80px;
+}
+
+.title{
+	font-size:50px;
+	text-align:center;
+	vertical-align:center;
+}
+
+h1{
+	font-size:50px;
+	font-weight:800px;
+}
+
+.komidasi1,.komidasi2,.komidasi3{
+	position:absolute;
+	font-size:30px;
+	font-weight:600px;
+	width:600px;
+}
+.komidasi1{
+	top:220px;
+}
+.komidasi2{
+	top:220px;
+	left:650px;
+}
+.komidasi3{
+	top:620px;
+}
+
+
+.ep{
+	position:absolute;
+	top:700px;
+	width:600px;
+	background-color:#FFF;	
+	border-radius:20px 20px 20px 20px;
+	margin-bottom:20px;
+}
+
+.code{
+	position:absolute;
+	left:650px;
+	top:300px;
+	width:600px;
+	background-color:#FFF;	
+	border-radius:20px 20px 20px 20px;
+}
+
+.picture img{
+	position:absolute;
+	top:290px;
+	width:600px;
+	border-radius:20px 20px 20px 20px;
+}
+
+.home {
+	font-size: 35px;
+	position: absolute;
+	width: 0.4em;
+	height: 0.4em;
+	border-top: 0.6em solid #39a9d6;
+	border-left: 0.4em solid #39a9d6;
+	border-right: 0.4em solid #39a9d6;
+	top:40px;
+	left:1200px;
+}
+/* 屋根 */
+.home::before {
+	position: absolute;
+	content: "";
+	top: -1.2em;
+	left: -0.6em;
+	width: 0;
+	height: 0;
+	border-left: 0.8em solid transparent;
+	border-right: 0.8em solid transparent;
+	border-bottom: 0.8em solid #39a9d6;
+}
+/* 煙突 */
+.home::after {
+	position: absolute;
+	top: -1.0em;
+	left: 0.6em;
+	width: 0.1em;
+	height: 0.4em;
+	content: "";
+	background-color: #39a9d6;
+}
